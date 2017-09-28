@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context="com.example.android.codequiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/quiz_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--Question Card 1-->
+        <LinearLayout
+            android:id="@+id/card_question_1"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#4285F4" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_1" />
+
+            <RadioGroup
+                android:id="@+id/q1_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/q1_radio_1"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q1_answer_1" />
+
+                <RadioButton
+                    android:id="@+id/q1_radio_2"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q1_answer_2" />
+
+                <RadioButton
+                    android:id="@+id/q1_radio_3"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q1_answer_3" />
+            </RadioGroup>
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 2-->
+        <LinearLayout
+            android:id="@+id/card_question_2"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#EA4335" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_2"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/q2_answer"
+                style="@style/AnswerEditText"
+                android:backgroundTint="#EA4335"
+                android:hint="@string/question_2_hint" />
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 3-->
+        <LinearLayout
+            android:id="@+id/card_question_3"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#FBBC05" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_3" />
+
+            <EditText
+                android:id="@+id/q3_answer"
+                style="@style/AnswerEditText"
+                android:backgroundTint="#FBBC05"
+                android:hint="@string/question_3_hint" />
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 4-->
+        <LinearLayout
+            android:id="@+id/card_question_4"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#34A853" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_4" />
+
+            <!--Interactive Answer-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/question_4_true" />
+
+                <Switch
+                    android:id="@+id/q4_switch"
+                    style="@style/AnswerSwitch" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:text="@string/question_4_false" />
+
+            </LinearLayout>
+
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 5-->
+        <LinearLayout
+            android:id="@+id/card_question_5"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#4285F4" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_5" />
+
+            <RadioGroup
+                android:id="@+id/q5_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/q5_radio_1"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q5_answer_1" />
+
+                <RadioButton
+                    android:id="@+id/q5_radio_2"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q5_answer_2" />
+
+                <RadioButton
+                    android:id="@+id/q5_radio_3"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q5_answer_3" />
+            </RadioGroup>
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 6-->
+        <LinearLayout
+            android:id="@+id/card_question_6"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#EA4335" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_6" />
+
+            <EditText
+                android:id="@+id/q6_answer"
+                style="@style/AnswerEditText"
+                android:backgroundTint="#EA4335"
+                android:hint="@string/question_6_hint" />
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 7-->
+        <LinearLayout
+            android:id="@+id/card_question_7"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#FBBC05" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_7" />
+
+            <RadioGroup
+                android:id="@+id/q7_radioGroup"
+                style="@style/AnswerLinear"
+                android:layout_marginBottom="6dp">
+
+                <RadioButton
+                    android:id="@+id/q7_radio_1"
+                    style="@style/AnswerRadioHor" />
+
+                <RadioButton
+                    android:id="@+id/q7_radio_2"
+                    style="@style/AnswerRadioHor" />
+
+                <RadioButton
+                    android:id="@+id/q7_radio_3"
+                    style="@style/AnswerRadioHor" />
+
+                <RadioButton
+                    android:id="@+id/q7_radio_4"
+                    style="@style/AnswerRadioHor" />
+
+            </RadioGroup>
+
+            <LinearLayout style="@style/AnswerLinear">
+
+                <TextView
+                    style="@style/AnswerTextView"
+                    android:text="@string/q7_answer_1" />
+
+                <TextView
+                    style="@style/AnswerTextView"
+                    android:text="@string/q7_answer_2" />
+
+                <TextView
+                    style="@style/AnswerTextView"
+                    android:text="@string/q7_answer_3" />
+
+                <TextView
+                    style="@style/AnswerTextView"
+                    android:text="@string/q7_answer_4" />
+
+            </LinearLayout>
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 8-->
+        <LinearLayout
+            android:id="@+id/card_question_8"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#34A853" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_8" />
+
+            <!--Answer 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/q8_view_1"
+                    style="@style/AnswerTextViewNumber"
+                    android:text="@string/q8_answer_1" />
+
+                <EditText
+                    android:id="@+id/q8_answer_1"
+                    style="@style/AnswerEditTextNumber"
+                    android:imeOptions="actionNext" />
+
+            </LinearLayout>
+
+            <!--Answer 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/q8_view_2"
+                    style="@style/AnswerTextViewNumber"
+                    android:text="@string/q8_answer_2" />
+
+                <EditText
+                    android:id="@+id/q8_answer_2"
+                    style="@style/AnswerEditTextNumber"
+                    android:imeOptions="actionNext" />
+
+            </LinearLayout>
+
+            <!--Answer 3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/q8_view_3"
+                    style="@style/AnswerTextViewNumber"
+                    android:text="@string/q8_answer_3" />
+
+                <EditText
+                    android:id="@+id/q8_answer_3"
+                    style="@style/AnswerEditTextNumber"
+                    android:imeOptions="actionNext" />
+
+            </LinearLayout>
+
+            <!--Answer 4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/q8_view_4"
+                    style="@style/AnswerTextViewNumber"
+                    android:text="@string/q8_answer_4" />
+
+                <EditText
+                    android:id="@+id/q8_answer_4"
+                    style="@style/AnswerEditTextNumber"
+                    android:imeOptions="actionDone" />
+
+            </LinearLayout>
+
+            <View style="@style/CardEndDash" />
+
+        </LinearLayout>
+
+        <!--Question Card 9-->
+        <LinearLayout
+            android:id="@+id/card_question_9"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#4285F4" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_9" />
+
+            <RadioGroup
+                android:id="@+id/q9_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/q9_radio_1"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q9_answer_1" />
+
+                <RadioButton
+                    android:id="@+id/q9_radio_2"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q9_answer_2" />
+
+                <RadioButton
+                    android:id="@+id/q9_radio_3"
+                    style="@style/AnswerRadioGroup"
+                    android:text="@string/q9_answer_3" />
+
+            </RadioGroup>
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+        <!--Question Card 10-->
+        <!--All Done FAB-->
+        <LinearLayout
+            android:id="@+id/card_question_10"
+            style="@style/QuestionCard">
+
+            <View
+                style="@style/CardTopDash"
+                android:background="#EA4335" />
+
+            <TextView
+                style="@style/QuestionTextView"
+                android:text="@string/question_10" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--Column 1-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/q10_checkbox_1"
+                        style="@style/AnswerCheckbox"
+                        android:text="@string/q10_answer_1" />
+
+                    <CheckBox
+                        android:id="@+id/q10_checkbox_2"
+                        style="@style/AnswerCheckbox"
+                        android:text="@string/q10_answer_2" />
+
+                    <CheckBox
+                        android:id="@+id/q10_checkbox_3"
+                        style="@style/AnswerCheckbox"
+                        android:text="@string/q10_answer_3" />
+
+                    <CheckBox
+                        android:id="@+id/q10_checkbox_4"
+                        style="@style/AnswerCheckbox"
+                        android:text="@string/q10_answer_4" />
+
+                    <CheckBox
+                        android:id="@+id/q10_checkbox_5"
+                        style="@style/AnswerCheckbox"
+                        android:text="@string/q10_answer_5" />
+
+                    <CheckBox
+                        android:id="@+id/q10_checkbox_6"
+                        style="@style/AnswerCheckbox"
+                        android:text="@string/q10_answer_6" />
+
+                </LinearLayout>
+
+                <!--Column 2-->
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/all_done_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="#4285F4"
+                    android:clickable="true"
+                    android:onClick="quizFAB"
+                    app:backgroundTint="@android:color/black"
+                    app:elevation="8dp"
+                    app:fabSize="normal"
+                    app:srcCompat="@drawable/ic_done_all_white_36dp" />
+
+            </RelativeLayout>
+
+            <View style="@style/CardEndDash" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#EA4335</item>
+
+    </style>
+
+    <style name="QuestionCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#FFFFFF</item>
+
+    </style>
+
+    <style name="CardTopDash">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+
+    </style>
+
+    <style name="CardEndDash">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="QuestionTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AnswerLinear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">4</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="AnswerCheckbox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:checked">false</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AnswerRadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:buttonTint">#4285F4</item>
+    </style>
+
+    <style name="AnswerRadioHor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:buttonTint">#FBBC05</item>
+    </style>
+
+    <style name="AnswerTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="AnswerEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="AnswerEditTextNumber">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:backgroundTint">#34A853</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:hint">@string/edit_text_version</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="AnswerTextViewNumber">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="AnswerSwitch">
+        <item name="android:thumbTint">#34A853</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
